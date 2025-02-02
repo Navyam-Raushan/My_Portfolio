@@ -40,9 +40,9 @@ $(document).ready(function () {
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
-        emailjs.init("fAYRJQ2EyvTkb-Z_l");
+        emailjs.init("CgHlrTlMEo8ysxXHY");
 
-        emailjs.sendForm('service_a7gd5b7', 'template_dpfyn5t', '#contact-form')
+        emailjs.sendForm('service_vw7oyb7', 'template_6v10ywb', '#contact-form')
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 document.getElementById("contact-form").reset();
@@ -60,7 +60,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Shivam ";
+            document.title = "Portfolio | Navyam ";
             $("#favicon").attr("href", "assets/images/html.png");
         }
         else {
@@ -72,7 +72,13 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["frontend development", "backend development", "web designing", "web development"],
+    strings: [
+        "Machine Learning Engineer",
+        "Data Analyst",
+        "Python Developer",
+        "Software Engineer",
+        "AI Enthusiast"
+    ],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
